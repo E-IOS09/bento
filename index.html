@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BentoFolio</title>
+    <link rel="stylesheet" href="output.css">
+    <script src="script.js"></script>
+</head>
+<body class="text-white h-screen flex flex-col items-center">
+
+    <!-- Navbar Container -->
+    <div class="navbar flex space-x-4 mt-10 bg-gray-800 p-3 rounded-lg shadow-lg">
+        <a href="#home" class="nav-item active text-white font-bold">Home</a>
+        <a href="#projects" class="nav-item text-gray-400 hover:text-white">Projects</a>
+        <a href="#contact" class="nav-item text-gray-400 hover:text-white">Contact</a>
+    </div>
+
+    <!-- Bento Layout Container -->
+    <div class="bento-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 mt-10 max-w-4xl w-full">
+
+        <!-- Who am I Section with more horizontal width -->
+        <div class="bento-item col-span-2 bg-gray-800 p-5 rounded-lg shadow-lg">
+            <h1 class="text-xl font-semibold mb-3">Who am I?</h1>
+            <p class="text-gray-400 text-sm leading-relaxed">
+                Hello! I am a developer who really enjoys transforming ideas into functional software that exceeds expectations.
+                I like to be constantly learning from other professionals, teams, and communities to stay on top of the latest industry trends.
+                Being a developer is not just a job for me; it is an activity that I absolutely appreciate all the time.
+            </p>
+        </div>
+
+        <!-- Background Image Section with more vertical height -->
+        <div class="bento-item row-span-2 bg-cover bg-center rounded-lg shadow-lg" style="background-image: url('26296.jpg'); min-height: 400px;">
+            <!-- Empty div for background image -->
+        </div>
+
+        <!-- Role Section (Frontend Developer) with reduced height -->
+        <div class="bento-item bg-blue-700 p-3 rounded-lg shadow-lg flex items-center justify-center text-lg font-semibold text-white h-20">
+            Frontend Developer
+        </div>
+
+         <!-- Profile Section (Commented) -->
+         <div class="bento-item bg-gray-800 p-5 rounded-lg shadow-lg flex flex-col items-center text-center">
+            <img src="https://via.placeholder.com/80" alt="Leo Miranda" class="w-20 h-20 rounded-full mb-3">
+            <p class="font-semibold text-lg">Leo Miranda</p>
+        </div>
+
+        <!-- Technologies Section (Commented) -->
+        <div class="bento-item bg-gray-800 p-5 rounded-lg shadow-lg">
+            <h3 class="text-lg font-semibold mb-3">Technologies I have worked with</h3>
+            <div class="grid grid-cols-3 gap-3 text-gray-400 text-3xl">
+                <i class="devicon-javascript-plain"></i>
+                <i class="devicon-typescript-plain"></i>
+                <i class="devicon-vuejs-plain"></i>
+                <i class="devicon-react-original"></i>
+                <i class="devicon-tailwindcss-plain"></i>
+                <i class="devicon-nextjs-original"></i>
+                <i class="devicon-graphql-plain"></i>
+                <i class="devicon-sass-original"></i>
+                <i class="devicon-express-original"></i>
+            </div>
+        </div>
+
+       
+
+        <!-- Quote Section (Commented) -->
+        <!-- <div class="bento-item bg-blue-700 p-5 rounded-lg shadow-lg flex items-center justify-center text-center text-lg font-semibold">
+            "I really like creating software solutions"
+        </div> -->
+
+        <!-- Education Section with extended width -->
+        <div class="bento-item col-span-2 bg-gray-800 p-5 rounded-lg shadow-lg">
+            <h3 class="text-lg font-semibold mb-3">Education</h3>
+            <p class="text-sm">
+                Full Stack Development Immersive (2022)<br>
+                Computer Engineering (2018-2021)
+            </p>
+        </div>
+        
+    </div>
+        
+</body>
+</html>
+

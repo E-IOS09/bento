@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eshita Mangal </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js"></script>
+</head>
+<body class="text-white h-screen flex flex-col items-center bg-gray-900 font-sans">
+
+    <!-- Navbar Container -->
+    <div class="navbar flex space-x-4 mt-10 bg-gray-800 p-3 rounded-lg shadow-lg">
+        <a href="index.html" class="nav-item text-gray-400 hover:text-white">Home</a>
+        <a href="projects.html" class="nav-item text-gray-400 hover:text-white">Projects</a>
+        <a href="contactme.html" class="nav-item active text-white font-bold">Contact</a>
+    </div>
+    
+
+    <!-- Bento Layout Container -->
+    <div class="flex flex-col md:flex-row items-stretch justify-center gap-6 mt-10 max-w-4xl w-full px-4">
+        
+        <!-- Left Column with Email and LinkedIn stacked -->
+        <div class="flex flex-col gap-4 w-full md:w-1/2">
+            <!-- Email Button -->
+            <div class="bg-gray-800 p-4 rounded-lg shadow-lg flex items-center justify-center h-full">
+                <a href="mailto:leomirandadev@gmail.com" class="flex items-center text-white text-lg font-semibold bg-gray-700 px-4 py-2 rounded-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M12 12.713l11.985-9.713h-23.97l11.985 9.713zm-12-10.713v19.991l8.333-6.765-8.333-7.47zm24 0v19.991l-8.333-6.765 8.333-7.47zm-1.667 20l-8.333-6.767-8.333 6.767h16.666z"/></svg>
+                    mangaleshita@gmail.com
+                </a>
+            </div>
+
+            <!-- LinkedIn Button -->
+            <div class="bg-gray-800 p-4 rounded-lg shadow-lg flex items-center justify-center h-full">
+                <a href="https://www.linkedin.com/in/eshitamangal/" target="_blank" class="bg-white rounded-lg p-3 flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-900" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.25c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 11.25h-3v-5.5c0-1.158-.938-2.096-2.096-2.096h-.004c-1.158 0-2.096.938-2.096 2.096v5.5h-3v-10h3v1.413c.864-.864 2.085-1.413 3.421-1.413 2.674 0 4.75 2.176 4.75 4.75v5.25z"/></svg>
+                </a>
+            </div>
+        </div>
+
+        <!-- Right Column with GitHub Profile -->
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg flex flex-col items-center justify-center w-full md:w-1/2 h-full">
+            <a href="https://github.com/E-IOS09" target="_blank" class="flex flex-col items-center text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mb-2" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12 0 5.302 3.438 9.8 8.205 11.387.6.113.82-.26.82-.577v-2.234c-3.338.724-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.757-1.333-1.757-1.089-.745.084-.729.084-.729 1.205.084 1.838 1.237 1.838 1.237 1.07 1.835 2.809 1.304 3.495.998.108-.775.418-1.305.761-1.605-2.665-.304-5.466-1.333-5.466-5.931 0-1.31.469-2.381 1.237-3.221-.124-.303-.536-1.523.117-3.176 0 0 1.008-.322 3.3 1.23.957-.266 1.983-.398 3.003-.403 1.02.005 2.047.137 3.006.403 2.289-1.553 3.296-1.23 3.296-1.23.653 1.653.241 2.873.118 3.176.77.84 1.237 1.911 1.237 3.221 0 4.61-2.807 5.623-5.479 5.92.429.371.814 1.103.814 2.222v3.293c0 .319.217.694.824.576 4.765-1.588 8.201-6.087 8.201-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                <span class="text-2xl font-bold">GitHub Profile</span>
+            </a>
+            <p class="text-gray-400 text-sm mt-2">Find more of my repositories</p>
+        </div>
+    </div>
+
+</body>
+</html>

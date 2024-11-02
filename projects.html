@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - BentoFolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js"></script>
+    <style>
+        /* Custom gradient for project title */
+        .text-gradient {
+            background: linear-gradient(to right, #8b5cf6, #ec4899);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white font-sans min-h-screen flex flex-col items-center">
+
+    <!-- Navbar -->
+    <div class="navbar flex space-x-4 mt-10 bg-gray-800 p-3 rounded-lg shadow-lg">
+        <a href="index.html" class="nav-item text-gray-400 hover:text-white">Home</a>
+        <a href="projects.html" class="nav-item active text-white font-bold">Projects</a>
+        <a href="contactme.html" class="nav-item text-gray-400 hover:text-white">Contact</a>
+    </div>
+
+    <!-- Projects Section -->
+    <section id="projects" class="w-full max-w-4xl mt-10 p-5">
+        
+        <!-- Project Card -->
+        <div class="flex flex-col md:flex-row bg-gray-800 rounded-lg shadow-lg mb-6 overflow-hidden">
+            <!-- Left Section with Project Image -->
+            <div class="md:w-1/2">
+                <img src="chillfind.png" alt="Project Image" class="w-full h-full object-cover">
+            </div>
+        
+            <!-- Right Section with Title and Description -->
+            <div class="flex flex-col p-5 md:w-1/2">
+                <h2 class="text-4xl font-bold text-gradient mt-2">ChillFind : IceCreme Finder</h2>
+                <p class="mt-4 text-gray-400">
+                    A web application that helps users find nearby ice cream shops, trucks, and vans.
+                </p>
+                
+                <div class="flex space-x-4 mt-6">
+                    <!-- <a href="#" class="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-2 px-4 rounded-lg">Get Started</a> -->
+                    <a href="https://github.com/E-IOS09/ChillFind-" class="bg-gray-700 hover:bg-gray-600 text-white font-semibold py-2 px-4 rounded-lg">Github repository</a>
+                </div>
+        
+                <div class="flex space-x-2 mt-4">
+                    <span class="bg-gray-700 text-white text-sm font-semibold py-1 px-2 rounded">HTML</span>
+                    <span class="bg-gray-700 text-white text-sm font-semibold py-1 px-2 rounded">JavaScript</span>
+                    <span class="bg-gray-700 text-white text-sm font-semibold py-1 px-2 rounded">Tailwind</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Add additional project cards as needed -->
+
+    </section>
+
+</body>
+</html>

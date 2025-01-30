@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eshita Mangal</title>
     
-   
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         /* Custom gradient background for the page */
@@ -17,24 +16,37 @@
         .resume-link:hover {
             text-decoration: underline;
         }
+
+        /* View Box Styling */
+        .view-box {
+            position: absolute;
+            display: none;
+            pointer-events: none;
+        }
+
+        @media (max-width: 640px) {
+            .bento-grid {
+                padding: 1rem;
+            }
+        }
     </style>
 </head>
-<body class="text-white h-screen flex flex-col items-center  bg-gray-900 font-sans">
+<body class="text-white min-h-screen flex flex-col items-center bg-gray-900 font-sans">
 
     <!-- Navbar Container -->
-    <div class="navbar flex space-x-4 mt-10 bg-gray-800 p-3 rounded-lg shadow-lg">
-        <a href="index.html" class="nav-item active text-white font-bold">Home</a>
-        <a href="projects.html" class="nav-item text-gray-400 hover:text-white">Projects</a>
-        <a href="contactme.html" class="nav-item text-gray-400 hover:text-white">Contact</a>
+    <div class="navbar flex flex-wrap justify-center sm:justify-start space-x-2 sm:space-x-4 mt-10 bg-gray-800 p-3 rounded-lg shadow-lg w-[90%] sm:w-auto">
+        <a href="index.html" class="nav-item active text-white font-bold px-3 py-1">Home</a>
+        <a href="projects.html" class="nav-item text-gray-400 hover:text-white px-3 py-1">Projects</a>
+        <a href="contactme.html" class="nav-item text-gray-400 hover:text-white px-3 py-1">Contact</a>
     </div>
 
     <!-- Bento Layout Container -->
-    <div class="bento-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-10 max-w-5xl w-full px-4">
+    <div class="bento-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-6 sm:mt-10 max-w-5xl w-full px-4">
 
-        <!-- Who am I Section with more horizontal width -->
-        <section id="home" class="bento-item col-span-2 bg-gray-800 p-6 rounded-lg shadow-lg">
-            <h1 class="text-3xl font-semibold mb-4 text-blue-400">Who am I?</h1>
-            <p class="text-gray-300 text-md leading-relaxed text-1xl ">
+        <!-- Who am I Section -->
+        <section id="home" class="bento-item col-span-1 sm:col-span-2 bg-gray-800 p-4 sm:p-6 rounded-lg shadow-lg">
+            <h1 class="text-2xl sm:text-3xl font-semibold mb-3 sm:mb-4 text-blue-400">Who am I?</h1>
+            <p class="text-sm sm:text-base text-gray-300 leading-relaxed">
                 Hello! I am a computer science sophomore passionate about creating solutions 
                 that enhance user experiences. Currently, I support over 100 students 
                 as a Student Lab Demonstrator, fostering their technical skills. 
@@ -42,50 +54,87 @@
         </section>
 
         <!-- Background Image Section -->
-        <div class="bento-item row-span-2 bg-cover bg-center rounded-lg shadow-lg overflow-hidden" style="background-image: url('26296.jpg'); min-height: 450px;">
+        <div class="bento-item row-span-2 bg-cover bg-center rounded-lg shadow-lg overflow-hidden" style="background-image: url('26296.jpg'); min-height: 300px sm:min-height: 450px;">
         </div>
 
         <!-- Technologies Section -->
         <div class="bento-item bg-gray-800 p-4 rounded-lg shadow-lg">
-            <h3 class="text-2xl font-semibold mb-3 text-blue-400">Technologies I work with</h3>
-            <div class="grid grid-cols-3 gap-3 text-gray-300 text-3xl">
+            <h3 class="text-xl sm:text-2xl font-semibold mb-3 text-blue-400">Technologies I work with</h3>
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 text-gray-300">
                 <i class="devicon-java-plain">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg" class="w-12 sm:w-16" />
                 </i>
                 <i class="devicon-javascript-plain">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" class="w-12 sm:w-16" />
                 </i>
                 <i class="devicon-csharp-plain">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" class="w-12 sm:w-16" />
                 </i>
                 <i class="devicon-tailwindcss-plain">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" class="w-12 sm:w-16" />
                 </i>
             </div>
         </div>
 
         <!-- Profile Section -->
-        <div class="bento-item bg-gray-800 p-6 rounded-lg shadow-lg text-center">
-            <img src="profile.jpg" alt="Profile" class="w-28 h-28 rounded-full mx-auto mb-4 border-2 border-blue-400">
-            <p class="text-lg font-semibold text-blue-400">Eshita Mangal</p>
-            <p class="text-gray-400">CS Student</p>
+        <div class="bento-item bg-gray-800 p-4 sm:p-6 rounded-lg shadow-lg text-center">
+            <img src="profile.jpg" alt="Profile" class="w-24 sm:w-28 h-24 sm:h-28 rounded-full mx-auto mb-4 border-2 border-blue-400">
+            <p class="text-base sm:text-lg font-semibold text-blue-400">Eshita Mangal</p>
+            <p class="text-sm sm:text-base text-gray-400">CS Student</p>
         </div>
 
-        <!-- Role Section (Frontend Developer) with reduced height and resume download link -->
-        <div class="bento-item bg-blue-700 p-3 rounded-lg shadow-lg flex items-center justify-center text-3xl font-semibold text-white h-40">
-            <a href="Eshita Mangal _2.pdf" download class="resume-link">Resume</a>
+        <!-- Resume Section with Hover View Box -->
+        <div id="resumeBox" class="bento-item bg-blue-700 p-3 rounded-lg shadow-lg flex items-center justify-center text-2xl sm:text-3xl font-semibold text-white h-32 sm:h-40 relative cursor-pointer" onclick="window.open('Eshita Mangal _2.pdf', '_blank')">
+            <span class="resume-link">Resume</span>
         </div>
 
-        <!-- Education Section with extended width -->
-        <section id="projects" class="bento-item col-span-2 bg-gray-800 p-6 rounded-lg shadow-lg">
-            <h3 class="text-lg font-semibold mb-4 text-blue-400">Education</h3>
-            <p class="text-gray-300">
+        <!-- Education Section -->
+        <section id="projects" class="bento-item col-span-1 sm:col-span-2 bg-gray-800 p-4 sm:p-6 rounded-lg shadow-lg">
+            <h3 class="text-lg sm:text-xl font-semibold mb-3 sm:mb-4 text-blue-400">Education</h3>
+            <p class="text-sm sm:text-base text-gray-300">
                 Bsc(Hons) Computer Science <br>
                 Manchester Metropolitan University
             </p>
         </section>
     </div>
 
+    <!-- Floating View Box -->
+    <div id="viewBox" class="view-box flex items-center gap-2 bg-[#B3B19E] text-black px-4 py-2 rounded-lg shadow-md">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2m-4 0H5a2 2 0 01-2-2v-6a2-2 0 012-2h2m4 0V5m0 0L9 8m3-3l3 3" />
+        </svg>
+        View
+    </div>
+
+    <script>
+        const resumeBox = document.getElementById("resumeBox");
+        const viewBox = document.getElementById("viewBox");
+
+        // Hide view box initially
+        viewBox.style.display = "none";
+        viewBox.style.position = "absolute";
+
+        // Check if it's a touch device
+        function isTouchDevice() {
+            return ('ontouchstart' in window) || (navigator.maxTouchPoints > 0);
+        }
+
+        // Only add hover events if it's not a touch device
+        if (!isTouchDevice()) {
+            resumeBox.addEventListener("mouseenter", () => {
+                viewBox.style.display = "flex";
+            });
+
+            resumeBox.addEventListener("mousemove", (event) => {
+                viewBox.style.left = `${event.pageX + 10}px`;
+                viewBox.style.top = `${event.pageY + 10}px`;
+            });
+
+            resumeBox.addEventListener("mouseleave", () => {
+                viewBox.style.display = "none";
+            });
+        }
+    </script>
+
 </body>
 </html>
-
